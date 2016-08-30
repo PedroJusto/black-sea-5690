@@ -9,3 +9,7 @@ I have not done unit testing or used build tools due to lack of availability ( A
 
 Nevertheless I am familiar with the build tool GULP which I use to to concatenate, uglify, replace content, process images, caching of html and images, among others ...
 
+
+The App using flow is similar to the mockup provided in the exercise sheet.
+
+:)
