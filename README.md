@@ -12,4 +12,6 @@ Nevertheless I am familiar with the build tool GULP which I use to to concatenat
 
 The App using flow is similar to the mockup provided in the exercise sheet.
 
+Please do not hesitate to contact me for more information.
+
 :)
