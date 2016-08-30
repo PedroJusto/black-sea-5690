@@ -1,0 +1,24 @@
+<div ng-controller="StreamController as streamCtrl">
+
+    <div class="top">
+        <h1>{{streamCtrl.game}}</h1>
+        <h3>by {{streamCtrl.channelName}}</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1 leftPanel">
+            <button type="button" class="btn btn-primary glyphicon glyphicon-chevron-left" ui-sref="streams"> Back</button>
+
+
+            <div style="padding:5px; text-align:center">Viewers: {{streamCtrl.viewersCount}}</div>
+            <div content-loading="streamCtrl.spinLoaderActive"></div>
+        </div>
+
+        <div class="col-md-11">
+            <iframe src="{{streamCtrl.channelStreamUrl}}" height="360" width="640" frameborder="0" scrolling="no" allowfullscreen="true">
+            </iframe>
+
+        </div>
+    </div>
+
+</div>

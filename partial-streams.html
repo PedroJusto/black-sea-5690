@@ -1,0 +1,30 @@
+<div class="row" ng-controller="StreamsController as streamCtrl">
+  <header class="col-md-12 text-center">
+    <h1>Pedro Justo's Blip Tech Exercise</h1>
+    <h3>Twitch Streams</h3>
+  </header>
+  <div class="input-group input-group-sm search-div">
+    <span class="input-group-addon"><span class=" glyphicon glyphicon-search"></span></span>
+    <input type="search" class="form-control" ng-model="streamCtrl.search" ng-model-options="{ debounce: 300 }" ng-change="streamCtrl.searchStream()"
+      placeholder="Search streams (ex: Fifa)">
+  </div>
+
+  <div content-loading="streamCtrl.spinLoaderActive"></div>
+
+  <div class="col-md-3 col-sm-6 col-xs-12" style="padding:10px;" ng-repeat="stream in streamCtrl.streams ">
+
+    <h4>By {{stream.channel.display_name}}</h3>
+
+    <div class="streamerDisplay">
+
+      <div ui-sref="stream({ channel:stream.channel.display_name, game: stream.game})">
+        <img src="http://placehold.it/50x50" ng-src="{{stream.channel.video_banner}}">
+
+        <br />
+        <span class="name">{{stream.game}}</span>
+
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

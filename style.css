@@ -1,0 +1,54 @@
+
+.streamerDisplay img {
+  height: 50px;
+  display: inline-block;
+}
+
+
+input::-webkit-input-placeholder {
+   font-style: italic;
+}
+
+input::-moz-placeholder{
+   font-style: italic;
+}
+
+body{
+  padding: 1em;
+  background: #2B3134;
+  color: #777;
+  text-align: center;
+  font-family: "Gill sans", sans-serif;
+  margin: 0 auto;
+}
+
+header{
+  margin: 1em 0;
+  border-bottom: 1px dashed;
+  padding-bottom: 1em;
+  font-weight: lighter;
+}
+
+.top,
+.leftPanel{
+  margin-bottom: 20px;
+}
+.loader{
+  margin: 0 0 2em;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+svg path,
+svg rect{
+  fill: #FF6700;
+}
+
+iframe, object, embed {
+    max-width: 100%;
+}
