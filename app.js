@@ -33,7 +33,7 @@
             vm.spinLoaderActive = false;
           })
           .error(function (data) {
-            alert(data)
+            alert("something went wrong, please check console");
             vm.spinLoaderActive = false;
           });
       };
